@@ -1,0 +1,183 @@
+/* General */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h2 {
+text-align: center;
+margin: 20px 0;
+}
+
+/* Navegación */
+.navbar {
+background-color: chocolate;
+color: white;
+display: flex;
+justify-content: space-between;
+padding: 10px 20px;
+}
+
+.navbar-links {
+list-style: none;
+display: flex;
+gap: 15px;
+}
+
+.navbar-links li a {
+color: white;
+text-decoration: none;
+}
+
+/* Cards */
+.cards-section {
+padding: 20px;
+}
+
+.cards-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+
+.card {
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.card h3 {
+margin: 10px 0;
+}
+
+.card p {
+padding: 0 10px 10px;
+}
+
+/* Formulario de Contacto */
+.contact-form-section {
+    padding: 30px;
+    background-color: chocolate;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #42a5f5;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: crimson;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: crimson;
+    transform: scale(1.05);
+}
+
+#form-message {
+    text-align: center;
+    margin-top: 15px;
+    color: #e53935;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* SI PIDE UN CARD CON DESCRIPCION ACTIVAR O BORAR ESTO SEGUN SE NECESITE*/
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #a71d2a;
+  }
+  

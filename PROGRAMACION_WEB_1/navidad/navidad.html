@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Carrusel y Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="navidad.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <div class="navbar-brand">Mi Página</div>
+    <ul class="navbar-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="./../recetas/receta.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Carrusel -->
+  <div class="carousel">
+    <div class="carousel-images" id="carousel-images">
+      <img src="mario.jpeg" alt="Imagen 1">
+      <img src="mario.jpeg" alt="Imagen 2">
+      <img src="mario.jpeg" alt="Imagen 3">
+    </div>
+    <div class="carousel-buttons">
+      <button id="prev-button">&#10094;</button>
+      <button id="next-button">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <section class="cards-container">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Descripción breve de la tarjeta 1.</p>
+      <button class="view-more-btn" data-description="Descripción detallada de la tarjeta 1.">Ver más</button>
+    </div>
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Descripción breve de la tarjeta 2.</p>
+      <button class="view-more-btn" data-description="Descripción detallada de la tarjeta 2.">Ver más</button>
+    </div>
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Descripción breve de la tarjeta 3.</p>
+      <button class="view-more-btn" data-description="Descripción detallada de la tarjeta 3.">Ver más</button>
+    </div>
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Descripción breve de la tarjeta 4.</p>
+      <button class="view-more-btn" data-description="Descripción detallada de la tarjeta 4.">Ver más</button>
+    </div>
+    <div class="card">
+      <h3>Card 5</h3>
+      <p>Descripción breve de la tarjeta 5.</p>
+      <button class="view-more-btn" data-description="Descripción detallada de la tarjeta 5.">Ver más</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Detalle</h2>
+      <p id="modal-description">Contenido del modal</p>
+      <button class="close-modal-btn">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="navidad.js"></script>
+</body>
+</html>

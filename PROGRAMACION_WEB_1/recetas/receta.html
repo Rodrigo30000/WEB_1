@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Recetas</title>
+  <link rel="stylesheet" href="receta.css">
+</head>
+<body>
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="navbar-brand">Recetas Deliciosas</div>
+    <ul class="navbar-links">
+      <li><a href="./../navidad/navidad.html">Inicio</a></li>
+      <li><a href="#">Recetas</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de Cards -->
+  <section class="cards-section">
+    <h2>Recetas Populares</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="recipe1.jpg" alt="Receta 1">
+        <h3>Tacos al Pastor</h3>
+        <p>Una deliciosa receta mexicana con carne de cerdo marinada.</p>
+      </div>
+      <div class="card">
+        <img src="recipe2.jpg" alt="Receta 2">
+        <h3>Pizza Margarita</h3>
+        <p>Clásica pizza italiana con tomate, albahaca y queso.</p>
+      </div>
+      <div class="card">
+        <img src="recipe3.jpg" alt="Receta 3">
+        <h3>Ensalada César</h3>
+        <p>Perfecta combinación de lechuga, crutones y aderezo César.</p>
+      </div>
+      <!-- card modal borrar o mantener segun se necesite-->
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>Descripción breve de la tarjeta 2.</p>
+        <button class="view-more-btn" data-description="Descripción detallada de la tarjeta 2.">Ver más</button>
+      </div>
+      <!-- card modal borrar o mantener segun se necesite-->
+    </div>
+  </section>
+
+  <!-- eN CASO DE PEDIR CON CARDS MODALES IGUAL ACA BORRAR O NO ESTA PARTE-->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Detalle</h2>
+      <p id="modal-description">Contenido del modal</p>
+      <button class="close-modal-btn">Cerrar</button>
+    </div>
+  </div>
+  <!-- eN CASO DE PEDIR CON CARDS MODALES IGUAL ACA BORRAR O NO ESTA PARTE-->
+
+  <!-- Formulario de Contacto -->
+  <section class="contact-form-section">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+      
+      <label for="phone">Celular:</label>
+      <input type="text" id="phone" name="phone" placeholder="celular de 8 digitos" required>
+      
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+      
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <script src="receta.js"></script>
+</body>
+</html>
