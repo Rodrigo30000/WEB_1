@@ -101,3 +101,61 @@ function renderMatrix(matrix) {
 }
 
  */
+
+
+
+// matriz para  BORRAR O NO
+// 111
+// 121
+// 111
+/*
+document.getElementById('generate-matrix').addEventListener('click', () => {
+  const n = parseInt(document.getElementById('matrix-size').value);
+  if (isNaN(n) || n < 1) {
+    alert('Por favor, ingrese un n válido mayor a 0.');
+    return;
+  }
+
+  const matrix = generateLayeredMatrix(n);
+  renderMatrix(matrix);
+});
+
+function generateLayeredMatrix(n) {
+  const size = 2 * n - 1; // El tamaño total de la matriz será (2n - 1)
+  const matrix = Array.from({ length: size }, () => Array(size).fill(0));
+
+  let layerValue = 1;
+  let start = 0;
+  let end = size - 1;
+
+  while (start <= end) {
+    for (let i = start; i <= end; i++) {
+      matrix[start][i] = layerValue; // Fila superior
+      matrix[end][i] = layerValue; // Fila inferior
+      matrix[i][start] = layerValue; // Columna izquierda
+      matrix[i][end] = layerValue; // Columna derecha
+    }
+    layerValue++;
+    start++;
+    end--;
+  }
+
+  return matrix;
+}
+
+function renderMatrix(matrix) {
+  const container = document.getElementById('matrix-container');
+  container.innerHTML = '';
+  container.style.gridTemplateColumns = `repeat(${matrix.length}, auto)`;
+
+  matrix.forEach(row => {
+    row.forEach(cell => {
+      const cellDiv = document.createElement('div');
+      cellDiv.textContent = cell;
+      cellDiv.className = 'matrix-cell';
+      container.appendChild(cellDiv);
+    });
+  });
+}
+
+*/
